@@ -963,7 +963,6 @@ footer .copyright {
     font-size: 13px;
 }
 
-/* Tổng quan */
 #form {
     display: flex;
     justify-content: center;
@@ -1063,24 +1062,6 @@ footer .copyright {
 #form form p a:hover {
     text-decoration: underline;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    #form .container {
-        flex-direction: column;
-    }
-
-    #form .video,
-    #form form {
-        flex: none;
-        width: 100%;
-    }
-
-    #form form {
-        padding: 20px;
-    }
-}
-
 
 @media (max-width: 799px) {
     .section-p1 {
@@ -1185,6 +1166,40 @@ footer .copyright {
 
     #form-details form {
         width: 50%;
+    }
+
+    #form .container {
+        flex-direction: column;
+        max-width: 700px;
+    }
+
+    #form .video {
+        height: 250px;
+    }
+
+    #form .video video {
+        object-fit: cover;
+    }
+
+    #form form {
+        padding: 20px;
+    }
+
+    #form form h2 {
+        font-size: 22px;
+    }
+
+    #form form input {
+        font-size: 14px;
+    }
+
+    #form form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #form form p {
+        font-size: 12px;
     }
 }
 
@@ -1338,5 +1353,39 @@ footer .copyright {
     #subtotal {
         width: 100%;
         padding: 20px;
+    }
+
+    #form {
+        padding: 10px;
+    }
+
+    #form .container {
+        width: 100%;
+    }
+
+    #form .video {
+        height: 200px;
+    }
+
+    #form form {
+        padding: 15px;
+    }
+
+    #form form h2 {
+        font-size: 20px;
+    }
+
+    #form form input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #form form button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    #form form p {
+        font-size: 10px;
     }
 }
