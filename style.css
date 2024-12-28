@@ -1285,6 +1285,84 @@ footer .copyright {
     font-weight: bold;
 }
 
+#bill {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#bill .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#bill h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.bill-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.customer-info,
+.order-summary {
+    width: 48%;
+}
+
+.customer-info h3,
+.order-summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.customer-info p,
+.payment-status p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.order-table th,
+.order-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.order-table th {
+    background-color: #f7f7f7;
+}
+
+.order-table tfoot tr td {
+    font-weight: bold;
+}
+
+.payment-status {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.payment-status h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
 @media (max-width: 799px) {
     .section-p1 {
         padding: 40px 40px;
@@ -1452,6 +1530,26 @@ footer .copyright {
     #checkout .shipping-info button,
     #checkout .payment-info button {
         width: 100%;
+    }
+
+    .bill-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer-info,
+    .order-summary {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .order-table th,
+    .order-table td {
+        padding: 8px;
+    }
+
+    .payment-status {
+        padding: 10px;
     }
 }
 
@@ -1734,6 +1832,71 @@ footer .copyright {
 
     #checkout .order-summary .order-table tfoot tr {
         font-size: 14px;
+    }
+
+    #bill h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .bill-details {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .customer-info,
+    .order-summary {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .customer-info h3,
+    .order-summary h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .customer-info p,
+    .payment-status p {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+
+    .order-table {
+        font-size: 14px;
+    }
+
+    .order-table th,
+    .order-table td {
+        padding: 6px;
+    }
+
+    .payment-status {
+        padding: 10px;
+    }
+
+    .payment-status h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .order-table tfoot tr td {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .order-table td {
+        text-align: left;
+    }
+
+    .order-table th {
+        font-size: 14px;
+        padding: 6px;
     }
 
 }
