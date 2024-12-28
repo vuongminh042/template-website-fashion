@@ -963,6 +963,125 @@ footer .copyright {
     font-size: 13px;
 }
 
+/* Tổng quan */
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#form .container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Phần video */
+#form .video {
+    flex: 1;
+    min-height: 300px;
+    background-color: #eef;
+    position: relative;
+}
+
+#form .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Phần form */
+#form form {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+#form form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    display: block;
+}
+
+#form form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form form button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#form form button:hover {
+    background-color: #0056b3;
+}
+
+#form form p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+#form form p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#form form p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #form .container {
+        flex-direction: column;
+    }
+
+    #form .video,
+    #form form {
+        flex: none;
+        width: 100%;
+    }
+
+    #form form {
+        padding: 20px;
+    }
+}
+
+
 @media (max-width: 799px) {
     .section-p1 {
         padding: 40px 40px;
