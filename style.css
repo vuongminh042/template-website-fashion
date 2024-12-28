@@ -1135,6 +1135,72 @@ footer .copyright {
     text-decoration: underline;
 }
 
+#wishlist {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#wishlist .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#wishlist h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#wishlist .wishlist-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#wishlist .wishlist-table th,
+#wishlist .wishlist-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#wishlist .wishlist-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#wishlist .wishlist-table td img {
+    max-width: 100px;
+    height: auto;
+}
+
+#wishlist .wishlist-table .add-to-cart,
+#wishlist .wishlist-table .remove-from-wishlist {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#wishlist .wishlist-table .add-to-cart:hover,
+#wishlist .wishlist-table .remove-from-wishlist:hover {
+    background-color: #0056b3;
+}
+
+#wishlist .empty-message {
+    font-size: 18px;
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+}
+
+
 
 @media (max-width: 799px) {
     .section-p1 {
@@ -1277,6 +1343,16 @@ footer .copyright {
 
     #forgot-password .container {
         width: 80%;
+    }
+
+    #wishlist .wishlist-table th,
+    #wishlist .wishlist-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #wishlist .wishlist-table td img {
+        max-width: 80px;
     }
 }
 
@@ -1474,5 +1550,15 @@ footer .copyright {
     #forgot-password form button {
         font-size: 14px;
         padding: 8px;
+    }
+
+    #wishlist .wishlist-table th,
+    #wishlist .wishlist-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #wishlist .wishlist-table td img {
+        max-width: 60px;
     }
 }
